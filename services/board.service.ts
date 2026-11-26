@@ -1,6 +1,6 @@
 "use server";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
-import { Board } from "@/types/board.type";
+import { BoardType } from "@/types/board.type";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
@@ -72,7 +72,7 @@ export const deleteBoardById = async (id: string) => {
   redirect("/boards");
 };
 
-export const updateBoard = async (board: Board) => {
+export const updateBoard = async (board: BoardType) => {
   const supabase = await createSupabaseServerClient();
   const { error } = await supabase
     .from("boards")

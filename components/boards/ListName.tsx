@@ -68,7 +68,7 @@ const ListName = ({ list }: Props) => {
             setDraft(savedName);
             setIsEdit(true);
           }}
-          className="text-md font-bold cursor-pointer p-1 rounded hover:bg-gray-200"
+          className="text-md font-bold cursor-pointer p-1 rounded hover:bg-gray-200 hover:text-black"
         >
           {savedName}
         </span>

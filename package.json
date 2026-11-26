@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
+    "@dnd-kit/helpers": "^0.5.3",
+    "@dnd-kit/react": "^0.5.3",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.119.0",
     "@tailgrids/icons": "^2.0.1",
@@ -22,7 +24,9 @@
     "react-aria-components": "^1.22.1",
     "react-dom": "19.3.0",
     "react-icons": "^5.7.0",
-    "tailwind-merge": "^3.7.0"
+    "supabase": "^3.2.0",
+    "tailwind-merge": "^3.7.0",
+    "zustand": "^5.1.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.11",

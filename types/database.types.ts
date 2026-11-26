@@ -35,6 +35,30 @@ export type Database = {
         }
         Relationships: []
       }
+      cards: {
+        Row: {
+          card_name: string | null
+          created_at: string
+          id: string
+          list_id: string | null
+          sort_number: number | null
+        }
+        Insert: {
+          card_name?: string | null
+          created_at?: string
+          id?: string
+          list_id?: string | null
+          sort_number?: number | null
+        }
+        Update: {
+          card_name?: string | null
+          created_at?: string
+          id?: string
+          list_id?: string | null
+          sort_number?: number | null
+        }
+        Relationships: []
+      }
       list: {
         Row: {
           board_id: string | null
@@ -42,6 +66,7 @@ export type Database = {
           created_by: string | null
           id: string
           list_name: string | null
+          sort_number: number | null
         }
         Insert: {
           board_id?: string | null
@@ -49,6 +74,7 @@ export type Database = {
           created_by?: string | null
           id?: string
           list_name?: string | null
+          sort_number?: number | null
         }
         Update: {
           board_id?: string | null
@@ -56,6 +82,7 @@ export type Database = {
           created_by?: string | null
           id?: string
           list_name?: string | null
+          sort_number?: number | null
         }
         Relationships: []
       }

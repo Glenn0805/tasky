@@ -77,7 +77,7 @@ const CreateListButton = (props: Props) => {
                   }}
                 />
               </TextField>
-              <div className="flex flex-row">
+              <div className="flex flex-row gap-2">
                 <Button type="submit" pending={isLoading} size={"xs"}>
                   Add
                 </Button>
